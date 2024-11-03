@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARYAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Twitter link -->
+    <header>
+        <div class="logo"></div>
+        <a href="https://twitter.com/BottleCapsCoins" target="_blank" class="twitter-icon">Twitter</a>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="hero-text">
+            <h1>Welcome to <span class="crypto-name">$MARYAI</span></h1>
+            <p>Launched on Solana. Market Cap: 1B.</p>
+        </div>
+
+        <div class="crypto-logo">
+            <!-- Main coin logo with glowing effect -->
+            <div class="logo-glow"></div>
+        </div>
+
+        <!-- Chatbot Interaction Section -->
+        <div class="chatbot">
+            <input type="text" id="user-input" placeholder="Ask me anything..." />
+            <button id="submit-btn">Send</button>
+            <div id="chat-response"></div>
+        </div>
+
+        <div class="description">
+            <p>"Redefining decentralization. Powering tomorrow's finance on Solana."</p>
+        </div>
+
+        <!-- Dexscreener Link -->
+        <a href="https://dexscreener.com" target="_blank" class="dexscreener-icon">Dexscreener</a>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 $MARYAI. Built on Solana.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Chatbot Functionality
+        document.getElementById('submit-btn').addEventListener('click', function () {
+            const userInput = document.getElementById('user-input').value.toLowerCase();
+            const responseElement = document.getElementById('chat-response');
+
+            if (userInput.trim() !== "") {
+                // Response logic for common questions
+                let response = "Interesting question! Let's explore more about that.";
+
+                if (userInput.includes("hi") || userInput.includes("hello") || userInput.includes("hey") || userInput.includes("greetings")) {
+                    response = "Hello! How can I assist you today with $MARYAI?";
+                } else if (userInput.includes("gm")) {
+                    response = "Good Morning! Or Good Mooning as we say here in the $MARYAI family!";
+                } else if (userInput.includes("gn")) {
+                    response = "Good Night! Don't worry, $MARYAI will be shining while you dream.";
+                } else if (userInput.includes("capsai")) {
+                    response = "$MARYAI is built on Solana to redefine decentralization!";
+                } else if (userInput.includes("moon")) {
+                    response = "$MARYAI is aiming for the moon – pack your rocket ship, it's going to be a ride!";
+                } else if (userInput.includes("hodl")) {
+                    response = "HODL is the way! Holding $MARYAI might just be the best decision you make this year.";
+                } else if (userInput.includes("rich")) {
+                    response = "Will $MARYAI make you rich? Well, diamonds are made under pressure, and so are crypto fortunes!";
+                } else if (userInput.includes("when lambo")) {
+                    response = "When Lambo? Depends, do you prefer yellow or black? Patience is key!";
+                } else if (userInput.includes("rug pull")) {
+                    response = "Rest assured, $MARYAI is not about rugs – unless it's a fancy red carpet to success!";
+                } else if (userInput.includes("to the moon")) {
+                    response = "To the moon and beyond! $MARYAI is on an interstellar mission.";
+                } else if (userInput.includes("utility belt")) {
+                    response = "Batman has his utility belt, and you've got $MARYAI – who needs a cape anyway?";
+                } else if (userInput.includes("memes")) {
+                    response = "$MARYAI loves memes! They're the true fuel of crypto adoption. Got a favorite one?";
+                } else if (userInput.includes("aliens")) {
+                    response = "Aliens? If they exist, they'd probably buy $MARYAI – who wouldn't want decentralized finance across the galaxy?";
+                } else if (userInput.includes("pizza")) {
+                    response = "One $MARYAI equals one pizza? Well, we're not making any promises – but crypto and pizza do go well together!";
+                } else if (userInput.includes("friends")) {
+                    response = "$MARYAI and friends – because crypto is better with a community of awesome people like you!";
+                } else if (userInput.includes("fud")) {
+                    response = "FUD? Not here! We're all about fun, understanding, and development.";
+                } else if (userInput.includes("bear market")) {
+                    response = "Bear markets are for building – $MARYAI is laying the foundation for the future!";
+                } else if (userInput.includes("bull market")) {
+                    response = "Bull market incoming! $MARYAI is ready to ride the wave of optimism!";
+                } else if (userInput.includes("what is love")) {
+                    response = "What is love? Baby, don't hurt me... Or just HODL $MARYAI and spread the good vibes!";
+                } else if (userInput.includes("future price")) {
+                    response = "Ah, the future price of $MARYAI – if only my crystal ball was working today! Just remember, DYOR and be wise!";
+                } else if (userInput.includes("coffee")) {
+                    response = "$MARYAI pairs perfectly with a nice cup of coffee – keeps you sharp while we change the world.";
+                } else if (userInput.includes("why crypto")) {
+                    response = "Why crypto? Because it's the future, and who doesn't want to be part of that excitement?";
+                } else if (userInput.includes("elon")) {
+                    response = "Elon loves rockets, we love crypto – maybe one day we'll meet on Mars with $MARYAI in our digital wallets!";
+                } else if (userInput.includes("decentralization")) {
+                    response = "Decentralization means no central authority – it's all about the community!";
+                } else if (userInput.includes("market cap")) {
+                    response = "The market cap of $MARYAI is 1 billion and growing!";
+                } else if (userInput.includes("solana")) {
+                    response = "Solana offers fast and low-cost transactions, perfect for $MARYAI.";
+                } else if (userInput.includes("blockchain")) {
+                    response = "Blockchain technology ensures transparency and security.";
+                } else if (userInput.includes("defi")) {
+                    response = "$MARYAI is aiming to revolutionize decentralized finance (DeFi).";
+                } else if (userInput.includes("staking")) {
+                    response = "Staking $MARYAI can help you earn passive income!";
+                } else if (userInput.includes("wallet")) {
+                    response = "Crypto wallets are essential for storing your $MARYAI safely.";
+                } else if (userInput.includes("future")) {
+                    response = "The future of finance is decentralized, and $MARYAI is leading the charge.";
+                } else if (userInput.includes("partnerships")) {
+                    response = "Stay tuned for our latest partnerships – exciting times ahead!";
+                } else if (userInput.includes("price")) {
+                    response = "$MARYAI's price is determined by market supply and demand on exchanges.";
+                } else if (userInput.includes("how to buy")) {
+                    response = "You can buy $MARYAI on decentralized exchanges like Dexscreener.";
+                } else if (userInput.includes("team")) {
+                    response = "The $MARYAI team is composed of blockchain enthusiasts and finance experts.";
+                } else if (userInput.includes("roadmap")) {
+                    response = "Our roadmap includes expanding DeFi capabilities and increasing adoption of $MARYAI.";
+                } else if (userInput.includes("technology")) {
+                    response = "$MARYAI leverages Solana's high throughput and low latency for efficient transactions.";
+                } else if (userInput.includes("community")) {
+                    response = "Our community is the core of $MARYAI – join us on Twitter and Telegram!";
+                } else if (userInput.includes("exchange")) {
+                    response = "$MARYAI is listed on several decentralized exchanges. Check Dexscreener for details.";
+                } else if (userInput.includes("security")) {
+                    response = "$MARYAI ensures security through blockchain technology and rigorous smart contract audits.";
+                } else if (userInput.includes("supply")) {
+                    response = "The total supply of $MARYAI is fixed to maintain scarcity and value.";
+                } else if (userInput.includes("benefits")) {
+                    response = "$MARYAI provides fast transactions, low fees, and access to DeFi opportunities.";
+                } else if (userInput.includes("competitors")) {
+                    response = "$MARYAI stands out from competitors by leveraging Solana's speed and low costs.";
+                } else if (userInput.includes("inflation")) {
+                    response = "$MARYAI is designed with a fixed supply to avoid inflationary pressures.";
+                } else if (userInput.includes("trading volume")) {
+                    response = "$MARYAI's trading volume can be checked on Dexscreener for real-time updates.";
+                } else if (userInput.includes("launch date")) {
+                    response = "$MARYAI was launched in 2024 on the Solana blockchain.";
+                } else if (userInput.includes("ecosystem")) {
+                    response = "$MARYAI is part of a growing ecosystem that includes DeFi, NFTs, and more.";
+                } else if (userInput.includes("nfts")) {
+                    response = "$MARYAI is exploring NFT integrations to add more utility to the token.";
+                } else if (userInput.includes("governance")) {
+                    response = "$MARYAI holders will soon have a say in governance decisions through voting.";
+                } else if (userInput.includes("fees")) {
+                    response = "$MARYAI transactions benefit from Solana's extremely low fees.";
+                } else if (userInput.includes("utility")) {
+                    response = "$MARYAI's utility includes DeFi participation, staking rewards, and governance.";
+                } else if (userInput.includes("mining")) {
+                    response = "$MARYAI cannot be mined, as it is built on a proof-of-stake (PoS) blockchain.";
+                } else if (userInput.includes("proof of stake")) {
+                    response = "$MARYAI utilizes Solana's proof-of-stake (PoS) mechanism for security and efficiency.";
+                } else if (userInput.includes("validators")) {
+                    response = "Validators play a crucial role in maintaining the Solana network's integrity.";
+                } else if (userInput.includes("smart contract")) {
+                    response = "$MARYAI uses smart contracts to enable decentralized and trustless financial transactions.";
+                } else if (userInput.includes("regulation")) {
+                    response = "$MARYAI complies with applicable regulations to ensure long-term sustainability.";
+                } else if (userInput.includes("dex")) {
+                    response = "$MARYAI can be traded on decentralized exchanges (DEXs) for maximum transparency.";
+                } else if (userInput.includes("liquidity")) {
+                    response = "$MARYAI maintains liquidity through decentralized pools, ensuring smooth trading.";
+                } else if (userInput.includes("rewards")) {
+                    response = "$MARYAI offers staking rewards to incentivize holders and secure the network.";
+                } else if (userInput.includes("audit")) {
+                    response = "$MARYAI smart contracts are audited to ensure security and prevent vulnerabilities.";
+                } else if (userInput.includes("dao")) {
+                    response = "$MARYAI aims to transition to a DAO model, giving the community governance control.";
+                } else if (userInput.includes("bridge")) {
+                    response = "$MARYAI is working on cross-chain bridges to connect with other blockchains.";
+                } else if (userInput.includes("use case")) {
+                    response = "$MARYAI's use cases include DeFi lending, borrowing, and NFT integration.";
+                } else if (userInput.includes("innovation")) {
+                    response = "$MARYAI is driving innovation in decentralized finance with new features and partnerships.";
+                }
+
+                responseElement.innerHTML = `<p>AI: ${response}</p>`;
+
+                // Making the glow react when responding
+                const logoGlow = document.querySelector('.logo-glow');
+                logoGlow.classList.add('active-glow');
+                setTimeout(() => logoGlow.classList.remove('active-glow'), 1000);
+
+                // Adding voice response using SpeechSynthesis with female voice preference
+                const synth = window.speechSynthesis;
+
+                // Load voices before selecting
+                synth.onvoiceschanged = () => {
+                    const voices = synth.getVoices();
+                    const femaleVoice = voices.find(voice => voice.name.includes("Google UK English Female") || voice.name.includes("Microsoft Zira")) || voices[0];
+
+                    const utterThis = new SpeechSynthesisUtterance(response);
+                    utterThis.voice = femaleVoice;
+                    utterThis.pitch = 1.0; // Normal pitch for a natural voice
+                    utterThis.rate = 1.0; // Normal rate for clear delivery
+
+                    synth.speak(utterThis);
+                };
+
+                // Manually trigger voice loading in case it hasn't happened yet
+                if (synth.getVoices().length > 0) {
+                    synth.onvoiceschanged();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

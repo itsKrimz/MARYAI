@@ -1,0 +1,168 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff3d00;
+}
+
+/* Body Styling */
+body {
+    background-color: #1a0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #ff3d00;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.twitter-icon {
+    color: #ff3d00;
+    text-decoration: none;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #ff1744;
+    animation: glitch 1.5s infinite;
+}
+
+.crypto-name {
+    color: #ff3d00;
+}
+
+.hero-text p {
+    font-size: 24px;
+    color: #ff616f;
+    margin-top: 10px;
+}
+
+.crypto-logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.logo-glow {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff1744;
+    box-shadow: 0 0 20px #ff1744, 0 0 40px #ff1744, 0 0 80px #ff1744;
+    animation: pulse 2s infinite;
+}
+
+/* Active glow when responding */
+.logo-glow.active-glow {
+    box-shadow: 0 0 30px #ff5252, 0 0 60px #ff5252, 0 0 100px #ff5252;
+}
+
+.description p {
+    font-size: 18px;
+    color: #b71c1c;
+    margin-top: 10px;
+}
+
+/* Chatbot Section */
+.chatbot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#user-input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #330e0e;
+    color: #ff1744;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff616f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: #ff1744;
+}
+
+#chat-response {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ff5252;
+}
+
+/* Dexscreener Icon */
+.dexscreener-icon {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.dexscreener-icon:hover {
+    color: #ff1744;
+    text-shadow: 0 0 5px #ff1744;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    color: #7f0000;
+}
+
+/* Animations */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px 0 #ff1744, -2px -2px 0 #ff616f;
+    }
+    50% {
+        text-shadow: -2px 2px 0 #ff1744, 2px -2px 0 #ff616f;
+    }
+    100% {
+        text-shadow: 2px -2px 0 #ff1744, -2px 2px 0 #ff616f;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px #ff1744, 0 0 40px #ff1744, 0 0 80px #ff1744;
+    }
+    50% {
+        box-shadow: 0 0 30px #ff1744, 0 0 60px #ff1744, 0 0 100px #ff1744;
+    }
+}
